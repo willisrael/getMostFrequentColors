@@ -1,0 +1,153 @@
+body{
+  padding:0xp; margin:0px;
+}
+
+.container{
+  width:448px;
+  display: grid;
+  grid-template-columns: 392px 56px;
+  margin: 0px auto;
+}
+
+.appContainer{
+  width:350px;
+  background-color: #333333;
+  box-shadow:0px 50px 50px 10px rgba(0,0,0,0.5);
+  margin-top:50px;
+  padding:20px;
+  border-radius: 35px;
+  color: #dddddd;
+  border: 2px solid #000000;
+}
+
+.imagePanel{
+  width:346px;
+  background-color: #456789;
+  border-radius: 20px;
+  /*border:2px solid #000000;*/
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000000;
+  box-shadow: 0px 0px 0px 2px #555555;
+  margin-bottom:15px;
+}
+
+.imageCropControlsContainer{
+  overflow:hidden;
+}
+
+.imageCropControls{
+  width:50px;
+  padding-top:20px;
+  padding-bottom:20px;
+  height:164px;
+  background-color: #333333;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top:100px;
+  position:relative;
+  border:2px solid #000000;
+}
+
+.imageCropControlsHidden{
+  left: -54px;
+  transition: left 0.5s;
+}
+
+.imageCropControlsVisible{
+  left: -0px;
+  transition: left 0.5s;
+}
+
+
+.cropSizeControl{
+  border-radius: 0px !important;
+  width:90%;
+  border-left: 0px !important;
+  margin-bottom:1px;
+}
+
+.imagePreview{
+  display:none;
+}
+
+canvas{
+  border-radius: 20px;
+  margin-bottom:-4px;
+}
+
+.colorsPanel{
+  width:346px;
+  margin-top:15px; margin-bottom:10px;
+  /*padding:1px;*/
+  border-radius: 15px;
+  border:2px solid #000000;
+  box-shadow: 0px 0px 0px 2px #555555;
+  overflow: hidden;
+}
+
+.color{
+  height:30px; width:100%;
+
+}
+
+input[type="button"]{
+  height:40px;
+  background-image: url('../art/buttonbg.jpg');
+  background-size: contain;
+  border-radius: 15px;
+  border: 2px solid #000000;
+  box-shadow: inset 0px 11px 8px -10px rgba(255,255,255,0.6),
+              inset 0px -11px 8px -10px rgba(0,0,0,0.9);
+  color: #dddddd;
+}
+
+input[name="getColors"]{
+  margin-top:5px;
+  width:100%;
+  font-size: 18px;
+}
+
+.toleranceControl{
+  display: flex;
+  flex-flow: row; /* or 'row' and change the order of your html elements */
+  align-items: center;
+  justify-content: flex-start; /* or 'flex-start' and change the order of your html elements */
+  height: 50px;
+}
+
+.toleranceControl label{
+  display:inline-block;
+  padding-left:10px;
+  width:90px;
+}
+
+input[type="range"]{
+  width: 220px;
+}
+
+.color{
+  margin-bottom:2px;
+  /*
+  display:grid;
+  grid-template-columns: 30% 60%;
+  */
+}
+
+.color div{
+  display:inline-block;
+  text-align: center;
+  line-height: 30px;
+}
+
+.colorHexValue{
+  width:30%;
+}
+
+.percent{
+  width:60%;
+}
+
+.hidden{
+  display:none;
+}
